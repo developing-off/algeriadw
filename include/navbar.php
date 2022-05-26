@@ -13,88 +13,13 @@
         <div class="collapse navbar-collapse justify-content-center">
             <ul class="nav col-12 col-md-auto justify-content-center main-menu">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="<?php $url_root ?>home" role="button" >
+                    <a class="nav-link" href="<?php $url_root ?>home" role="button">
                         Home
                     </a>
-                    
+
                 </li>
                 <li><a href="<?php $url_root ?>services" class="nav-link">Services</a></li>
-                <li><a href="<?php $url_root ?>services" class="nav-link">Services</a></li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Resources</a>
-                    <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-                        <div class="dropdown-grid rounded-custom width-full-3">
-                            <div class="dropdown-grid-item">
-                                <h6 class="drop-heading">Reusable Section</h6>
-                                <a href="header.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-bars"></i></span>
-                                    <div class="drop-title">Navigations</div>
-                                </a>
-                                <a href="hero-sections.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-browser"></i></span>
-                                    <div class="drop-title">Hero Sections</div>
-                                </a>
-                                <a href="testimonials.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-address-card"></i></span>
-                                    <div class="drop-title">Testimonials</div>
-                                </a>
-                                <a href="call-to-action.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-bolt"></i></span>
-                                    <div class="drop-title">Call to Action</div>
-                                </a>
-                                <a href="tab-style.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-eject"></i></span>
-                                    <div class="drop-title">Tab Style</div>
-                                </a>
-                                <a href="services-style.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                    <div class="drop-title">Services Style</div>
-                                </a>
-                                <a href="work-process.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-hourglass-start"></i></span>
-                                    <div class="drop-title">Work Process</div>
-                                </a>
-                            </div>
-                            <div class="dropdown-grid-item">
-                                <h6 class="drop-heading">Reusable Section</h6>
-                                <a href="pricing-style.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-usd-square"></i></span>
-                                    <div class="drop-title">Pricing Style</div>
-                                </a>
-                                <a href="accordions.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-th-list"></i></span>
-                                    <div class="drop-title">Accordions</div>
-                                </a>
-                                <a href="features.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-chart-network"></i></span>
-                                    <div class="drop-title">Features</div>
-                                </a>
-                                <a href="footers.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-closed-captioning"></i></span>
-                                    <div class="drop-title">Footers</div>
-                                </a>
-
-                                <a href="team.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-user"></i></span>
-                                    <div class="drop-title">Our Team</div>
-                                </a>
-                                <a href="integration-style.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-paper-plane"></i></span>
-                                    <div class="drop-title">Integration Style</div>
-                                </a>
-                                <a href="blog-style.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-th-large"></i></span>
-                                    <div class="drop-title">Blog Style</div>
-                                </a>
-                            </div>
-                            <div class="dropdown-grid-item last-item bg-light radius-right-side">
-                                <a href="#"><img src="https://algeriadw.ga/assets/img/feature-img3.jpg" alt="add"
-                                        class="img-fluid rounded-custom" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </li> -->
+                <li><a href="<?php $url_root ?>about-us" class="nav-link">About Us</a></li>
                 <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -193,5 +118,34 @@
             <a href="<?php $url_root ?>login" class="btn btn-link text-decoration-none me-2">Sign In</a>
             <a href="<?php $url_root ?>register" class="btn btn-primary">Get Started</a>
         </div>
+        <!--offcanvas menu start-->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
+            <div class="offcanvas-header d-flex align-items-center mt-4">
+                <a href="<?php $url_root ?>" class="d-flex align-items-center mb-md-0 text-decoration-none">
+                    <img src="<?= $logo_png_right_black ?>" alt="logo" class="img-fluid ps-2" />
+                </a>
+                <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="far fa-close"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="<?php $url_root ?>" role="button" ">
+                            Home
+                        </a>
+                    </li>
+                    <li><a href="<?php $url_root ?>services" class="nav-link">Services</a></li>
+                    <li><a href="<?php $url_root ?>about-us" class="nav-link">About Us</a></li>
+                    <li><a href="<?php $url_root ?>pricing" class="nav-link">Pricing</a></li>
+                    
+                </ul>
+                <div class="action-btns mt-4 ps-3">
+                    <a href="<?php $url_root ?>login" class="btn btn-outline-primary me-2">Sign In</a>
+                    <a href="<?php $url_root ?>register" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <!--offcanvas menu end-->
     </div>
 </nav>

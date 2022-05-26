@@ -23,6 +23,8 @@ case 'confirm':
     if (!empty($url[1])) {
         $url1=$url[1];
         include 'auth/confirm.php';
+    }else{
+        include 'error/404.php';
     }
 break;
 case 'already_confirm':
@@ -46,6 +48,11 @@ break;
 case 'password-reset':
     if (empty($url[1])) {
         include 'auth/password-reset.php';
+    }else{
+        $url1=$url[1];
+       
+        include 'auth/password-change.php';
+
     }
 break;
 default:

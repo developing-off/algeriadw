@@ -1,3 +1,8 @@
+<?php
+@$success = '';
+@$error = '';
+require('func/auth_password-reset.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,19 +31,21 @@
                             <h1 class="fw-bold h3">Forgot your Password?</h1>
                             <p class="text-muted">Don't worry. Type your email and we will send a password recovery
                                 link to
-                                your email and follow step.</p>
+                                your email and follow step. <br>Link expire in 2hour</p>
 
-                            <form class="mt-5 register-form">
+                            <form method="POST" class="mt-5 register-form">
                                 <div class="row">
+                                    <p class="text-success"><?= @$success ?></p>
+                                    <p class="text-danger"><?= @$error ?></p>
                                     <div class="col-sm-12">
                                         <label for="email" class="mb-1">Email <span class="text-danger">*</span></label>
                                         <div class="input-group mb-3">
-                                            <input type="email" class="form-control" placeholder="Enter your email"
+                                            <input type="email" name="email" class="form-control" placeholder="Enter your email"
                                                 id="email" aria-label="email">
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary mt-3 d-block w-100">Reset
+                                        <button type="submit" name="pchange" class="btn btn-primary mt-3 d-block w-100">Reset
                                             Password
                                         </button>
                                     </div>
