@@ -16,19 +16,19 @@ if(isset($_POST['register_adw'])){
     $terms = $_POST['terms_agree'];
     //
     if(empty($email)){
-        $error = "Email is required";
+        @$error = "Email is required";
     }elseif(empty($password)){
-        $error = "Password is required";
+        @$error = "Password is required";
     }elseif(empty($password_confirm)){
-        $error = "Confirm password is required";
+        @$error = "Confirm password is required";
     }elseif(empty($username)){
-        $error = "Username is required";
+        @$error = "Username is required";
     }elseif(empty($name)){
-        $error = "Name is required";
+        @$error = "Name is required";
     }elseif(empty($terms)){
-        $error = "You must agree to the terms and conditions";
+        @$error = "You must agree to the terms and conditions";
     }elseif($password != $password_confirm){
-        $error = "Password and confirm password do not match";
+        @$error = "Password and confirm password do not match";
     }else{
         $sql = "SELECT * FROM users_login WHERE email = :email";
         $stmt = $pdo->prepare($sql);
@@ -36,7 +36,7 @@ if(isset($_POST['register_adw'])){
         $stmt->execute();
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         if($row){
-            $error = "Email already exists";
+            @$error = "Email already exists";
         }else{
             $sql = "INSERT INTO users_login (name,username,email,password) VALUES (:name,:username,:email,:password)";
             $stmt = $pdo->prepare($sql);
