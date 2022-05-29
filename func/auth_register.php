@@ -9,8 +9,8 @@ $fa_backup = NULL;
 $verify_stat = 0;
 if(isset($_POST['register_adw'])){
     $email = $_POST['email'];
-    $password = md5($_POST['password']);
-    $password_confirm = md5($_POST['cpassword']);
+    $password = $_POST['password'];
+    $password_confirm = $_POST['cpassword'];
     $username = $_POST['username'];
     $name = $_POST['name'];
     $terms = $_POST['terms_agree'];
@@ -30,6 +30,7 @@ if(isset($_POST['register_adw'])){
     }elseif($password != $password_confirm){
         @$error = "Password and confirm password do not match";
     }else{
+        $password = password_hash($password, PASSWORD_DEFAULT);
         $sql = "SELECT * FROM users_login WHERE email = :email";
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(':email',$email);

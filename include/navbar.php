@@ -115,8 +115,21 @@
         </div>
 
         <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
+            <?php 
+            if (isset($_SESSION['logged_in'])) {
+                if ($_SESSION['logged_in']== true) {
+            ?>
+            <a href="<?php $url_root ?>logout"
+                class="btn btn-link text-decoration-none me-2"><?= $_SESSION['username']; ?></a>
+            <?php
+                }
+            }else{
+            ?>
             <a href="<?php $url_root ?>login" class="btn btn-link text-decoration-none me-2">Sign In</a>
             <a href="<?php $url_root ?>register" class="btn btn-primary">Get Started</a>
+            <?php
+            }
+            ?>
         </div>
         <!--offcanvas menu start-->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
@@ -135,14 +148,28 @@
                             Home
                         </a>
                     </li>
-                    <li><a href="<?php $url_root ?>services" class="nav-link">Services</a></li>
+                    <li><a href=" <?php $url_root ?>services" class="nav-link">Services</a>
+                    </li>
                     <li><a href="<?php $url_root ?>about-us" class="nav-link">About Us</a></li>
                     <li><a href="<?php $url_root ?>pricing" class="nav-link">Pricing</a></li>
-                    
+
                 </ul>
                 <div class="action-btns mt-4 ps-3">
+                    <?php 
+                    if (isset($_SESSION['logged_in'])) {
+                        if ($_SESSION['logged_in']== true) {
+                     ?>
+                    <a href="<?php $url_root ?>logout"
+                        class="btn btn-link text-decoration-none me-2"><?= $_SESSION['username']; ?></a>
+                    <?php
+                    }
+                    }else{
+                    ?>
                     <a href="<?php $url_root ?>login" class="btn btn-outline-primary me-2">Sign In</a>
                     <a href="<?php $url_root ?>register" class="btn btn-primary">Get Started</a>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>

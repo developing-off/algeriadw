@@ -5,6 +5,22 @@ require_once('partials/_logos.php');
 require_once('partials/_clients.php');
 $url_root = 'https://'.$_SERVER['SERVER_NAME'].'/';
 
+if(isset($_SESSION['logged_in'])){
+    if ($_SESSION['info_stat'] == null) {
+        if ($_SERVER['REQUEST_URI'] != "/register_complet") {
+            header('Location:'.$url_root.'register_complet');
+        }
+    }elseif($_SESSION['info_stat'] == 1){
+        if ($_SERVER['REQUEST_URI'] != "/") {
+            header('Location:'.$url_root);
+        }
+    }
+}else{
+    if ($_SERVER['REQUEST_URI'] == "/register_complet") {
+        header('Location:'.$url_root.'login');
+    }
+}
+
 try{
     if(!empty($_GET['url'])){
         $url = explode("/", filter_var($_GET['request'],FILTER_SANITIZE_URL));

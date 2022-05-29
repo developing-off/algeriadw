@@ -1,3 +1,6 @@
+<?php
+require('func/auth_login.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,12 +45,13 @@
                                 <span class="divider-bar"></span>
                                 <h6 class="position-absolute text-center divider-text bg-light mb-0">Or</h6>
                             </div>
+                            <p class="text-danger"><?= $error ?></p>
                             <form method="POST" class="mt-4 register-form">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <label for="email" class="mb-1">Email <span class="text-danger">*</span></label>
                                         <div class="input-group mb-3">
-                                            <input type="email" class="form-control" placeholder="Email" id="email"
+                                            <input type="email" class="form-control" name="email" placeholder="Email" id="email"
                                                 required aria-label="email">
                                         </div>
                                     </div>
@@ -55,12 +59,12 @@
                                         <label for="password" class="mb-1">Password <span
                                                 class="text-danger">*</span></label>
                                         <div class="input-group mb-3">
-                                            <input type="password" class="form-control" placeholder="Password"
+                                            <input type="password" name="password" class="form-control" placeholder="Password"
                                                 id="password" required aria-label="Password">
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary mt-3 d-block w-100">Submit</button>
+                                        <button type="submit" name="login" class="btn btn-primary mt-3 d-block w-100">Submit</button>
                                     </div>
                                 </div>
                                 <p class="font-monospace fw-medium text-center text-muted mt-3 pt-4 mb-0">Don't have an

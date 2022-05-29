@@ -1,5 +1,7 @@
 <?php
 
+
+    require('func/auth_password_change.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,8 +29,8 @@
                                 src="<?= $logo_png_right_white ?>" alt="logo" class="img-fluid"></a>
                         <div class="register-wrap p-5 bg-light shadow rounded-custom">
                             <h1 class="fw-bold h3">Change Your Password</h1>
-
-
+                            <p class="text-danger"><?= @$error ?></p>
+                            <p class="text-success"><?= @$success ?></p>
                             <form method="POST" class="mt-5 register-form">
                                 <div class="row">
 
