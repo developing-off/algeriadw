@@ -45,7 +45,7 @@ require('func/auth_login.php');
                                 <span class="divider-bar"></span>
                                 <h6 class="position-absolute text-center divider-text bg-light mb-0">Or</h6>
                             </div>
-                            <p class="text-danger"><?= $error ?></p>
+                            <p class="text-danger"><?= @$error ?></p>
                             <form method="POST" class="mt-4 register-form">
                                 <div class="row">
                                     <div class="col-sm-12">

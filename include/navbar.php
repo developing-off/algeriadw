@@ -44,30 +44,7 @@
                                     <span class="me-2"><i class="far fa-server"></i></span>
                                     <div class="drop-title">Services Single</div>
                                 </a>
-                                <a href="blog.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-th-large"></i></span>
-                                    <div class="drop-title">Our Latest News</div>
-                                </a>
-                                <a href="blog-single.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-bars"></i></span>
-                                    <div class="drop-title">News Details</div>
-                                </a>
-                                <a href="career.html" class="dropdown-link px-0">
-                                    <span class="me-2"><i class="far fa-graduation-cap"></i></span>
-                                    <div class="drop-title">Career</div>
-                                </a>
-                                <a href="career-single.html" class="dropdown-link px-0">
-                                    <span class="me-2"><i class="far fa-user-graduate"></i></span>
-                                    <div class="drop-title">Career Single</div>
-                                </a>
-                                <a href="integrations.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-rocket-launch"></i></span>
-                                    <div class="drop-title">Integrations</div>
-                                </a>
-                                <a href="integration-single.html" class="dropdown-link px-0">
-                                    <span class="me-2"><i class="far fa-paper-plane"></i></span>
-                                    <div class="drop-title">Integration Single</div>
-                                </a>
+
                             </div>
                             <div class="dropdown-grid-item radius-right-side bg-light">
                                 <h6 class="drop-heading">Utility Pages</h6>
@@ -79,34 +56,7 @@
                                     <span class="me-2"><i class="far fa-life-ring"></i></span>
                                     <div class="drop-title">Help Center</div>
                                 </a>
-                                <a href="support-single.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-headset"></i></span>
-                                    <div class="drop-title">Help Details</div>
-                                </a>
-                                <a href="request-demo.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-laptop-code"></i></span>
-                                    <div class="drop-title">Request for Demo</div>
-                                </a>
-                                <a href="login.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-sign-in"></i></span>
-                                    <div class="drop-title">User Login</div>
-                                </a>
-                                <a href="register.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-user-plus"></i></span>
-                                    <div class="drop-title">User SignUp</div>
-                                </a>
-                                <a href="password-reset.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-trash-undo"></i></span>
-                                    <div class="drop-title">Recovery Account</div>
-                                </a>
-                                <a href="404.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-exclamation-triangle"></i></span>
-                                    <div class="drop-title">404 Page</div>
-                                </a>
-                                <a href="coming-soon.html" class="dropdown-link">
-                                    <span class="me-2"><i class="far fa-clock"></i></span>
-                                    <div class="drop-title">Coming Soon</div>
-                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -119,14 +69,44 @@
             if (isset($_SESSION['logged_in'])) {
                 if ($_SESSION['logged_in']== true) {
             ?>
-            <a href="<?php $url_root ?>logout"
-                class="btn btn-link text-decoration-none me-2"><?= $_SESSION['username']; ?></a>
+            <a href="#" class="btn btn-link text-decoration-none me-2 nav-link dropdown-toggle" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><?= $_SESSION['username']; ?></a>
+            <div style="left: 93% !important;" class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                <div class="dropdown-grid rounded-custom ">
+                    <div class="dropdown-grid-item">
+                        <h6 class="drop-heading">Account</h6>
+                        <a href="about-us.html" class="dropdown-link px-0">
+                            <span class="me-2"><i class="far fa-user"></i></span>
+                            <div class="drop-title">Dashboard</div>
+                        </a>
+                        <a href="about-us.html" class="dropdown-link px-0">
+                            <span class="me-2"><i class="far fa-edit"></i></span>
+                            <div class="drop-title">Edit</div>
+                        </a>
+                        <a href="about-us.html" class="dropdown-link px-0">
+                            <span class="me-2"><i class="far fa-shopping-basket"></i></span>
+                            <div class="drop-title">Order</div>
+                        </a>
+                        <a href="about-us.html" class="dropdown-link px-0">
+                            <span class="me-2"><i class="far fa-ticket-alt"></i></span>
+                            <div class="drop-title">Ticket</div>
+                        </a>
+                        <a href="<?= $url_root ?>logout" class="dropdown-link px-0">
+                            <span class="me-2"><i class="far fa-door-open"></i></span>
+                            <div class="drop-title">Logout</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <?php
                 }
             }else{
             ?>
+
             <a href="<?php $url_root ?>login" class="btn btn-link text-decoration-none me-2">Sign In</a>
             <a href="<?php $url_root ?>register" class="btn btn-primary">Get Started</a>
+
             <?php
             }
             ?>
@@ -152,19 +132,52 @@
                     </li>
                     <li><a href="<?php $url_root ?>about-us" class="nav-link">About Us</a></li>
                     <li><a href="<?php $url_root ?>pricing" class="nav-link">Pricing</a></li>
-
-                </ul>
-                <div class="action-btns mt-4 ps-3">
                     <?php 
                     if (isset($_SESSION['logged_in'])) {
                         if ($_SESSION['logged_in']== true) {
-                     ?>
-                    <a href="<?php $url_root ?>logout"
-                        class="btn btn-link text-decoration-none me-2"><?= $_SESSION['username']; ?></a>
+                            ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><?= $_SESSION['username']; ?></a>
+                        <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white" style="display: none;">
+                            <div class="dropdown-grid rounded-custom width-full-3">
+                                <div class="dropdown-grid-item">
+                                    <h6 class="drop-heading">Account</h6>
+                                    <a href="about-us.html" class="dropdown-link px-0">
+                                        <span class="me-2"><i class="far fa-user"></i></span>
+                                        <div class="drop-title">Dashboard</div>
+                                    </a>
+                                    <a href="about-us.html" class="dropdown-link px-0">
+                                        <span class="me-2"><i class="far fa-edit"></i></span>
+                                        <div class="drop-title">Edit</div>
+                                    </a>
+                                    <a href="about-us.html" class="dropdown-link px-0">
+                                        <span class="me-2"><i class="far fa-shopping-basket"></i></span>
+                                        <div class="drop-title">Order</div>
+                                    </a>
+                                    <a href="about-us.html" class="dropdown-link px-0">
+                                        <span class="me-2"><i class="far fa-ticket-alt"></i></span>
+                                        <div class="drop-title">Ticket</div>
+                                    </a>
+                                    <a href="<?= $url_root ?>logout" class="dropdown-link px-0">
+                                        <span class="me-2"><i class="far fa-door-open"></i></span>
+                                        <div class="drop-title">Logout</div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
                     <?php
+                        }
                     }
-                    }else{
-                    ?>
+                ?>
+                </ul>
+                <div class="action-btns mt-4 ps-3">
+                    <?php
+                    if (!isset($_SESSION['logged_in'])) {
+                   ?>
                     <a href="<?php $url_root ?>login" class="btn btn-outline-primary me-2">Sign In</a>
                     <a href="<?php $url_root ?>register" class="btn btn-primary">Get Started</a>
                     <?php

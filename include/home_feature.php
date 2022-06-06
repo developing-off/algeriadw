@@ -8,8 +8,7 @@ $features=$sql->fetchAll(PDO::FETCH_ASSOC);
         <div class="col-lg-6 col-md-10">
             <div class="section-heading text-center">
                 <h2>With all the Features You Need</h2>
-                <p>Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas
-                    distributed for stand-alone web-readiness.</p>
+                <p>the principle functionality that we offer you.</p>
             </div>
         </div>
     </div>
