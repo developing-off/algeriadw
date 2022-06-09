@@ -9,14 +9,26 @@ case 'home':
         include 'home.php';
     }
 break;
-case 'login':
+case 'terms':
     if (empty($url[1])) {
-        include 'auth/login.php';
+        include 'privacy/terms.php';
+    } else {
+        $url1=$url[1];
+        include 'privacy/terms.php';
+    }
+break;
+case 'login':
+    if(!isset($_SESSION['logged_in'])){
+            include 'auth/login.php';
+    }else{
+        header('Location:'.$url_root);
     }
 break;
 case 'register':
-    if (empty($url[1])) {
+    if(!isset($_SESSION['logged_in'])){
         include 'auth/register.php';
+    }else{
+        header('Location:'.$url_root);
     }
 break;
 case 'register_complet':
@@ -45,10 +57,11 @@ case 'send_confirm':
     }
 break;
 case 'error_confirm':
-    if (empty($url[1])) {
+   
         include 'auth/error_confirm.php';
-    }
+    
 break;
+
 
 case 'password-reset':
     if (empty($url[1])) {

@@ -1,5 +1,6 @@
 <?php
 require('func/auth_login.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -33,7 +33,7 @@
              </div>
              <div class="col-md-12 col-lg-7 mt-4 mt-md-0 mt-lg-0">
                  <div class="row">
-                     <div class="col-md-6 col-lg-6 mt-4 mt-md-0 mt-lg-0">
+                     <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                          <div class="footer-single-col">
                              <h3>Primary Pages</h3>
                              <ul class="list-unstyled footer-nav-list mb-lg-0">
@@ -43,12 +43,20 @@
                              </ul>
                          </div>
                      </div>
-                     <div class="col-md-6 col-lg-6 mt-4 mt-md-0 mt-lg-0">
+                     <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                          <div class="footer-single-col">
                              <h3>Pages</h3>
                              <ul class="list-unstyled footer-nav-list mb-lg-0">
                                  <li><a href="<?= $url_root ?>pricing" class="text-decoration-none">Pricing</a></li>
                                  <li><a href="<?= $url_root ?>contact" class="text-decoration-none">Contact</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                         <div class="footer-single-col">
+                             <h3>Terms</h3>
+                             <ul class="list-unstyled footer-nav-list mb-lg-0">
+                                 <li><a href="<?= $url_root ?>terms" class="text-decoration-none">Terms & Privacy</a></li>
                              </ul>
                          </div>
                      </div>
@@ -72,7 +80,8 @@
              <div class="col-md-4 col-lg-4">
                  <div class="footer-single-col text-start text-lg-end text-md-end">
                      <ul class="list-unstyled list-inline footer-social-list mb-0">
-                         <li class="list-inline-item"><a href="https://www.facebook.com/algeriadw"><i class="fab fa-facebook-f"></i></a></li>
+                         <li class="list-inline-item"><a href="https://www.facebook.com/algeriadw"><i
+                                     class="fab fa-facebook-f"></i></a></li>
                      </ul>
                  </div>
              </div>
