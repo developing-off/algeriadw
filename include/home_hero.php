@@ -8,7 +8,7 @@
                     Downloads Products.</p>
                 <div class="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
                     <a href="request-demo.html" class="btn btn-primary me-3">Custom Template</a>
-                    <a href="template"
+                    <a href="<?= $url_root ?>themes"
                         class="text-decoration-none d-inline-flex align-items-center watch-now-btn mt-3 mt-lg-0 mt-md-0">
                         <i class="fa-solid fa-eye"></i> Our Template </a>
                 </div>

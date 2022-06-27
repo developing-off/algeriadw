@@ -9,6 +9,18 @@ case 'home':
         include 'home.php';
     }
 break;
+case 'themes':
+    if(!isset($_SESSION['logged_in'])){
+       header('Location:'.$url_root.'login');
+    } else {
+        if (empty($url[1])) {
+            include 'template/theme.php';
+        } else {
+            $url1=$url[1];
+            include 'template/theme.php';
+        }
+    }
+break;
 case 'terms':
     if (empty($url[1])) {
         include 'privacy/terms.php';

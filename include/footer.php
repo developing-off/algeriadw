@@ -1,5 +1,3 @@
- <!--footer top start-->
- <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
  <div class="footer-top  bg-gradient text-white ptb-120"
      style="background: url('https://algeriadw.ga/assets/img/page-header-bg.svg')no-repeat bottom right">
      <div class="container">
