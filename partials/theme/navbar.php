@@ -1,488 +1,195 @@
-<div class="top-menu-area">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="menu-fullwidth">
-                    <div class="logo-wrapper">
-                        <div class="logo logo-top">
-                            <a href="<?= $url_root ?>"><img src="<?= $logo_png_right_white ?>" alt="logo image"
-                                    class="img-fluid"></a>
-                        </div>
-                    </div>
 
-                    <div class="menu-container">
-                        <div class="d_menu">
-                            <a style="color: white ;" href="">Home</a>
-                        </div>
-                    </div>
-
-
-                    <div class="author-menu">
-                        <!-- start .author-area -->
-                        <div class="author-area">
-                            <div class="search-wrapper">
-                                <div class="nav_right_module search_module">
-                                    <span class="icon-magnifier search_trigger"></span>
-
-                                    <div class="search_area">
-                                        <form action="#">
-                                            <div class="input-group input-group-light">
-                                                <span class="icon-left" id="basic-addon1">
-                                                    <i class="icon-magnifier"></i>
-                                                </span>
-                                                <input type="text" class="form-control search_field"
-                                                    placeholder="Type words and hit enter...">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="author__notification_area">
-                                <ul>
-                                    <li class="has_dropdown">
-                                        <div class="icon_wrap">
-                                            <span class="icon-bell"></span>
-                                            <span class="notification_status noti"></span>
-                                        </div>
-
-                                        <div class="dropdown notification--dropdown">
-
-                                            <div class="dropdown_module_header">
-                                                <h6>My Notifications</h6>
-                                            </div>
-
-                                            <div class="notifications_module">
-                                                <div class="notification">
-                                                    <div class="notification__info">
-                                                        <div class="info_avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head.png"
-                                                                alt="">
-                                                        </div>
-                                                        <div class="info">
-                                                            <p>
-                                                                <span>Anderson</span> added to Favourite
-                                                                <a href="#">Mccarther Coffee Shop</a>
-                                                            </p>
-                                                            <p class="time">Just now</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.notifications -->
-
-                                                    <div class="notification__icons ">
-                                                        <span class="icon-heart loved noti_icon"></span>
-                                                    </div>
-                                                    <!-- end /.notifications -->
-                                                </div>
-                                                <!-- end /.notifications -->
-
-                                                <div class="notification">
-                                                    <div class="notification__info">
-                                                        <div class="info_avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head2.png"
-                                                                alt="">
-                                                        </div>
-                                                        <div class="info">
-                                                            <p>
-                                                                <span>Michael</span> commented on
-                                                                <a href="#">DigiPro Extension Bundle</a>
-                                                            </p>
-                                                            <p class="time">Just now</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.notifications -->
-
-                                                    <div class="notification__icons ">
-                                                        <span class="icon-bubble commented noti_icon"></span>
-                                                    </div>
-                                                    <!-- end /.notifications -->
-                                                </div>
-                                                <!-- end /.notifications -->
-
-                                                <div class="notification">
-                                                    <div class="notification__info">
-                                                        <div class="info_avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head3.png"
-                                                                alt="">
-                                                        </div>
-                                                        <div class="info">
-                                                            <p>
-                                                                <span>Khamoka </span>purchased
-                                                                <a href="#"> Visibility Manager
-                                                                    Subscriptions</a>
-                                                            </p>
-                                                            <p class="time">Just now</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.notifications -->
-
-                                                    <div class="notification__icons ">
-                                                        <span class="icon-basket-loaded purchased noti_icon"></span>
-                                                    </div>
-                                                    <!-- end /.notifications -->
-                                                </div>
-                                                <!-- end /.notifications -->
-
-                                                <div class="notification">
-                                                    <div class="notification__info">
-                                                        <div class="info_avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head4.png"
-                                                                alt="">
-                                                        </div>
-                                                        <div class="info">
-                                                            <p>
-                                                                <span>Anderson</span> added to Favourite
-                                                                <a href="#">Mccarther Coffee Shop</a>
-                                                            </p>
-                                                            <p class="time">Just now</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.notifications -->
-
-                                                    <div class="notification__icons "><span
-                                                            class="icon-star reviewed noti_icon"></span>
-                                                    </div>
-                                                    <!-- end /.notifications -->
-                                                </div>
-                                                <!-- end /.notifications -->
-                                                <div class="text-center m-top-30 p-left-20 p-right-20"><a
-                                                        href="notification.html"
-                                                        class="btn btn-primary btn-md btn-block">View
-                                                        All</a></div>
-                                                <!-- end /.notifications -->
-                                            </div>
-                                            <!-- end /.dropdown -->
-                                        </div>
-                                    </li>
-
-                                    <li class="has_dropdown">
-                                        <div class="icon_wrap">
-                                            <span class="icon-envelope-open"></span>
-                                            <span class="notification_status msg"></span>
-                                        </div>
-
-                                        <div class="dropdown messaging--dropdown">
-                                            <div class="dropdown_module_header">
-                                                <h6>My Messages</h6>
-                                            </div>
-
-                                            <div class="messages">
-                                                <a href="message.html" class="message recent">
-                                                    <div class="message__actions_avatar">
-                                                        <div class="avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head4.png"
-                                                                alt="">
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.actions -->
-
-                                                    <div class="message_data">
-                                                        <div class="name_time">
-                                                            <div class="name">
-                                                                <p>NukeThemes</p>
-                                                                <span class="icon-envelope"></span>
-                                                            </div>
-
-                                                            <span class="time">Just now</span>
-                                                            <p>Hello John Smith! Nunc placerat mi ...</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.message_data -->
-                                                </a>
-                                                <!-- end /.message -->
-
-                                                <a href="message.html" class="message recent">
-                                                    <div class="message__actions_avatar">
-                                                        <div class="avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head5.png"
-                                                                alt="">
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.actions -->
-
-                                                    <div class="message_data">
-                                                        <div class="name_time">
-                                                            <div class="name">
-                                                                <p>Crazy Coder</p>
-                                                                <span class="icon-envelope"></span>
-                                                            </div>
-
-                                                            <span class="time">Just now</span>
-                                                            <p>Hi! Nunc placerat mi id nisi interum ...</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.message_data -->
-                                                </a>
-                                                <!-- end /.message -->
-
-                                                <a href="message.html" class="message">
-                                                    <div class="message__actions_avatar">
-                                                        <div class="avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head2.png"
-                                                                alt="">
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.actions -->
-
-                                                    <div class="message_data">
-                                                        <div class="name_time">
-                                                            <div class="name">
-                                                                <p>Hybrid Insane</p>
-                                                            </div>
-
-                                                            <span class="time">Just now</span>
-                                                            <p>Hi! Nunc placerat mi id nisi interum ...</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.message_data -->
-                                                </a>
-                                                <!-- end /.message -->
-
-                                                <a href="message.html" class="message">
-                                                    <div class="message__actions_avatar">
-                                                        <div class="avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head3.png"
-                                                                alt="">
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.actions -->
-
-                                                    <div class="message_data">
-                                                        <div class="name_time">
-                                                            <div class="name">
-                                                                <p>ThemeXylum</p>
-                                                            </div>
-
-                                                            <span class="time">Just now</span>
-                                                            <p>Hi! Nunc placerat mi id nisi interum ...</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.message_data -->
-                                                </a>
-                                                <!-- end /.message -->
-
-                                                <a href="message.html" class="message">
-                                                    <div class="message__actions_avatar">
-                                                        <div class="avatar">
-                                                            <img src="https://algeriadw.ga/assets/themes/img/notification_head4.png"
-                                                                alt="">
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.actions -->
-
-                                                    <div class="message_data">
-                                                        <div class="name_time">
-                                                            <div class="name">
-                                                                <p>NukeThemes</p>
-                                                                <span class="icon-envelope"></span>
-                                                            </div>
-
-                                                            <span class="time">Just now</span>
-                                                            <p>Hello John Smith! Nunc placerat mi ...</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- end /.message_data -->
-                                                </a>
-                                                <!-- end /.message -->
-                                            </div>
-                                            <div class="text-center m-top-30 m-bottom-30 p-left-20 p-right-20">
-                                                <a href="message.html" class="btn btn-primary btn-md btn-block">View
-                                                    All</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="has_dropdown">
-                                        <div class="icon_wrap">
-                                            <span class="icon-basket-loaded"></span>
-                                            <span class="notification_count purch">2</span>
-                                        </div>
-
-                                        <div class="dropdown dropdown--cart">
-                                            <div class="cart_area">
-                                                <div class="cart_list">
-                                                    <div class="cart_product">
-                                                        <div class="product__info">
-                                                            <div class="thumbn">
-                                                                <img src="https://algeriadw.ga/assets/themes/img/capro1.jpg"
-                                                                    alt="cart product thumbnail">
-                                                            </div>
-
-                                                            <div class="info">
-                                                                <a class="title" href="single-product.html">Finance
-                                                                    and Consulting Business Theme</a>
-                                                                <div class="cat">
-                                                                    <a href="#">
-                                                                        <img src="https://algeriadw.ga/assets/themes/img/catword.png"
-                                                                            alt="">Wordpress</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product__action">
-                                                            <a href="#">
-                                                                <span class="icon-trash"></span>
-                                                            </a>
-                                                            <p>$60</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart_product">
-                                                        <div class="product__info">
-                                                            <div class="thumbn">
-                                                                <img src="https://algeriadw.ga/assets/themes/img/capro2.jpg"
-                                                                    alt="cart product thumbnail">
-                                                            </div>
-
-                                                            <div class="info">
-                                                                <a class="title" href="single-product.html">Flounce
-                                                                    - Multipurpose OpenCart Theme</a>
-                                                                <div class="cat">
-                                                                    <a href="#">
-                                                                        <img src="https://algeriadw.ga/assets/themes/img/catword.png"
-                                                                            alt="">Wordpress</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="product__action">
-                                                            <a href="#">
-                                                                <span class="icon-trash"></span>
-                                                            </a>
-                                                            <p>$60</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="total">
-                                                    <p>
-                                                        <span>Total :</span>$80
-                                                    </p>
-                                                </div>
-                                                <div class="cart_action">
-                                                    <a class="btn btn-primary" href="cart.html">View
-                                                        Cart</a>
-                                                    <a class="btn btn-secondary" href="checkout.html">Checkout</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--start .author-author__info-->
-                            <div class="author-author__info has_dropdown">
-                                <?= require('_profile.php') ?>
-                            </div>
-                            <!--end /.author-author__info-->
-                        </div>
-                        <!-- end .author-area -->
-
-                        <!-- author area restructured for mobile -->
-                        <div class="mobile_content ">
-                            <span class="icon-user menu_icon"></span>
-
-                            <!-- offcanvas menu -->
-                            <div class="offcanvas-menu closed">
-                                <span class="icon-close close_menu"></span>
-                                <div class="author-author__info">
-                                    <div class="author__avatar v_middle">
-                                        <img src="https://algeriadw.ga/assets/themes/img/user-avater.png"
-                                            alt="user avatar">
-                                    </div>
-                                </div>
-                                <!--end /.author-author__info-->
-
-                                <div class="author__notification_area">
-                                    <ul>
-                                        <li>
-                                            <a href="notification.html">
-                                                <div class="icon_wrap">
-                                                    <span class="icon-bell"></span>
-                                                    <span class="notification_count noti">25</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="message.html">
-                                                <div class="icon_wrap">
-                                                    <span class="icon-envelope"></span>
-                                                    <span class="notification_count msg">6</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="cart.html">
-                                                <div class="icon_wrap">
-                                                    <span class="icon-basket"></span>
-                                                    <span class="notification_count purch">2</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--start .author__notification_area -->
-
-                                <div class="dropdown dropdown--author">
-                                    <ul>
-                                        <li>
-                                            <a href="author.html">
-                                                <span class="icon-user"></span>Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard.html">
-                                                <span class="icon-home"></span> Dashboard</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-setting.html">
-                                                <span class="icon-settings"></span> Setting</a>
-                                        </li>
-                                        <li>
-                                            <a href="cart.html">
-                                                <span class="icon-basket"></span>Purchases</a>
-                                        </li>
-                                        <li>
-                                            <a href="favourites.html">
-                                                <span class="icon-heart"></span> Favourite</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-add-credit.html">
-                                                <span class="icon-credit-card"></span>Add Credits</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-statement.html">
-                                                <span class="icon-chart"></span>Sale Statement</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-upload.html">
-                                                <span class="icon-cloud-upload"></span>Upload Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-manage-item.html">
-                                                <span class="icon-notebook"></span>Manage Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-withdrawal.html">
-                                                <span class="icon-briefcase"></span>Withdrawals</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon-logout"></span>Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="text-center">
-                                    <a href="signup.html" class="author-area__seller-btn inline">Become a
-                                        Seller</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end /.mobile_content -->
-                    </div>
-
-
+    <div class="top-bar-area bg-theme text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 basic-info text-left">
+                    <ul>
+                        <li>Total Items: <a href="#">319</a></li>
+                        <li>Community Users: <strong>397877</strong></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 login-info text-right">
+                    <a href="#"><i class="fas fa-user"></i> <?= $_SESSION['username'] ?></a>
                 </div>
             </div>
         </div>
-        <!-- end /.row -->
     </div>
-    <!-- end /.container -->
-</div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default attr-border bootsnav">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="badge">3</span>
+                            </a>
+                            <ul class="dropdown-menu cart-list">
+                                <li>
+                                    <a href="#" class="photo"><img src="assets/img/100x100.png" class="cart-thumb" alt="" /></a>
+                                    <h6>Examin - Education and LMS Theme</h6>
+                                    <p>$49.00</p>
+                                </li>
+                                <li>
+                                    <a href="#" class="photo"><img src="<?= $logo_png_right_black ?>" class="cart-thumb" alt="" /></a>
+                                    <h6>Rescaf - Food & Restaurant Template</h6>
+                                    <p>$17.00</p>
+                                </li>
+                                <li class="total">
+                                    <span class="pull-right"><strong>Total</strong>: $66.00</span>
+                                    <a href="#" class="btn btn-default btn-cart">Checkout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>        
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="<?= $logo_png_right_black ?>" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home Version One</a></li>
+                                <li><a href="index-2.html">Home Version Two</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="author-profile.html">Author Profile</a></li>
+                                <li><a href="search-product.html">Search Product</a></li>
+                                <li><a href="product-single.html">Product Single</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="404.html">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown megamenu-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">All Product</a>
+                            <ul class="dropdown-menu megamenu-content" role="menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-menu col-md-3">
+                                            <h6 class="title">Web Templates</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a href="#">Corporate</a></li>
+                                                    <li><a href="#">Admin Template</a></li>
+                                                    <li><a href="#">Wedding</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Hospital</a></li>
+                                                    <li><a href="#">Charity</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-3 -->
+                                        <div class="col-menu col-md-3">
+                                            <h6 class="title">WordPress Theme</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a href="#">Creative</a></li>
+                                                    <li><a href="#">Real Estate</a></li>
+                                                    <li><a href="#">Megazine</a></li>
+                                                    <li><a href="#">Sports</a></li>
+                                                    <li><a href="#">Entertainment</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-3 -->
+                                        <div class="col-menu col-md-3">
+                                            <h6 class="title">Sketch PSD</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a href="#">Event</a></li>
+                                                    <li><a href="#">Business</a></li>
+                                                    <li><a href="#">Non Profit</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Hospital</a></li>
+                                                    <li><a href="#">Blog</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-3 -->
+                                        <div class="col-menu col-md-3">
+                                            <h6 class="title">Joomla Theme</h6>
+                                            <div class="content">
+                                                <ul class="menu-col">
+                                                    <li><a href="#">eCommerce </a></li>
+                                                    <li><a href="#">Elementor </a></li>
+                                                    <li><a href="#">Creative </a></li>
+                                                    <li><a href="#">Multipurpose </a></li>
+                                                    <li><a href="#">Portfolio </a></li>
+                                                    <li><a href="#">Retail </a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end col-3 -->
+                                    </div><!-- end row -->
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">New</a>
+                        </li>
+                        <li>
+                            <a href="#">Popular</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
+                                <li><a href="blog-standard.html">Standard</a></li>
+                                <li><a href="blog-single-left-sidebar.html">Single Left Sidebar</a></li>
+                                <li><a href="blog-single-right-sidebar.html">Single Right Sidebar</a></li>
+                                <li><a href="single.html">Single</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>

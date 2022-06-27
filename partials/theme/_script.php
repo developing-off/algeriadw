@@ -1,3 +1,15 @@
-<script src="https://algeriadw.ga/assets/themes/js/plugins.min.js"></script>
-
-<script src="https://algeriadw.ga/assets/themes/js/script.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/jquery-1.12.4.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/bootstrap.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/equal-height.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/jquery.appear.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/jquery.easing.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/jquery.magnific-popup.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/modernizr.custom.13711.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/owl.carousel.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/wow.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/isotope.pkgd.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/count-to.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/jquery.nice-select.min.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/bootsnav.js"></script>
+<script src="https://algeriadw.ga/assets/themes/js/main.js"></script>

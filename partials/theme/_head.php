@@ -26,15 +26,18 @@
 <link rel="icon" href="<?= $logo_png_only ?>" type="image/png" sizes="16x16">
 <!--title-->
 <title>AlgeriaDW - Dev Web</title>
- <title>DigiPro - Digital Products Marketplace</title>
-
- <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <!-- inject:css-->
-
- <link rel="stylesheet" href="https://algeriadw.ga/assets/themes/css/plugin.min.css">
-
- <link rel="stylesheet" href="https://algeriadw.ga/assets/themes/css/style.css">
+<link href="https://algeriadw.ga/assets/themes/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://algeriadw.ga/assets/themes/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://algeriadw.ga/assets/themes/css/flaticon-set.css" rel="stylesheet" />
+<link href="https://algeriadw.ga/assets/themes/css/magnific-popup.css" rel="stylesheet" />
+<link href="https://algeriadw.ga/assets/themes/css/owl.carousel.min.css" rel="stylesheet" />
+<link href="https://algeriadw.ga/assets/themes/css/owl.theme.default.min.css" rel="stylesheet" />
+<link href="https://algeriadw.ga/assets/themes/css/animate.css" rel="stylesheet" />
+<link href="https://algeriadw.ga/assets/themes/css/bootsnav.css" rel="stylesheet" />
+<link href="https://algeriadw.ga/assets/themes/css/style.css" rel="stylesheet">
+<link href="https://algeriadw.ga/assets/themes/css/responsive.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
 
  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F2YCE9JKB"></script>
 <script>
