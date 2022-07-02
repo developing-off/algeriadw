@@ -1,5 +1,7 @@
+<?php require('partials/theme/_category.php') ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php require('partials/theme/_head.php') ?>
 </head>
@@ -21,7 +23,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="hero-box">
-                        <h2>617 Premium Bootstrap Templates & Website Themes</h2>
+                        <h2><?= $total_themes ?> Premium Bootstrap Templates & Website Themes</h2>
                         <ul>
                             <li>Themes</li>
                             <li>Templates </li>
@@ -33,7 +35,7 @@
                             <input type="text" placeholder="Search" class="form-control" name="search">
                             <button type="submit">
                                 <i class="fas fa-search"></i>
-                            </button>  
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -59,7 +61,7 @@
                                     <h4>Featured Item</h4>
                                     <h2><a href="#">Examin - Education and LMS Theme</a></h2>
                                     <p>
-                                        Are not windows set luckily musical hundred can. Collecting if sympathize middletons be of of reasonably. Horrible so kindness at thoughts exercise no weddings subjects. The mrs gay removed towards journey chapter females offered not. Led distrusts otherwise who may newspaper but. Last he dull am none he mile hold as. 
+                                        Are not windows set luckily musical hundred can. Collecting if sympathize middletons be of of reasonably. Horrible so kindness at thoughts exercise no weddings subjects. The mrs gay removed towards journey chapter females offered not. Led distrusts otherwise who may newspaper but. Last he dull am none he mile hold as.
                                     </p>
                                     <ul>
                                         <li>
@@ -86,7 +88,7 @@
                                     <h4>Featured Item</h4>
                                     <h2><a href="#">Examin - Education and LMS Theme</a></h2>
                                     <p>
-                                        Are not windows set luckily musical hundred can. Collecting if sympathize middletons be of of reasonably. Horrible so kindness at thoughts exercise no weddings subjects. The mrs gay removed towards journey chapter females offered not. Led distrusts otherwise who may newspaper but. Last he dull am none he mile hold as. 
+                                        Are not windows set luckily musical hundred can. Collecting if sympathize middletons be of of reasonably. Horrible so kindness at thoughts exercise no weddings subjects. The mrs gay removed towards journey chapter females offered not. Led distrusts otherwise who may newspaper but. Last he dull am none he mile hold as.
                                     </p>
                                     <ul>
                                         <li>
@@ -129,6 +131,15 @@
                                     <span>Site Template</span>
                                 </a>
                             </li>
+                            <?php foreach ($category as $catg) {
+                            ?>
+                                <li>
+                                    <a data-toggle="tab" href="#tab<?= $catg['id'] ?>" aria-expanded="false">
+                                        <span><?= $catg['name_category'] ?></span>
+                                    </a>
+                                </li>
+                            <?php
+                            } ?>
                             <li>
                                 <a data-toggle="tab" href="#tab2" aria-expanded="false">
                                     <span>WordPress</span>
@@ -155,105 +166,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/2.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Boxass</h5>
-                                                <span>Saas,Software</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/3.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Deluck</h5>
-                                                <span>Business</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/4.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Rescaf</h5>
-                                                <span>Food,Restaurant</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/5.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Medihub</h5>
-                                                <span>Medical,Health</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/6.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Buildco</h5>
-                                                <span>Construction</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/7.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Webfix</h5>
-                                                <span>Creative</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/8.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Buspro</h5>
-                                                <span>Corporate</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/9.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Seorun</h5>
-                                                <span>Digital Marketing</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/10.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Dostart</h5>
-                                                <span>Startup</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/11.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Examin</h5>
-                                                <span>Education,Course</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/12.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Softing</h5>
-                                                <span>Software Landing</span>
-                                            </div>
-                                        </a>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- End Single Tab Content -->
@@ -261,87 +174,7 @@
                             <!-- Single Tab Content -->
                             <div id="tab2" class="tab-pane fade">
                                 <div class="row">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/3.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Deluck</h5>
-                                                <span>Business</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/4.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Rescaf</h5>
-                                                <span>Food,Restaurant</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/5.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Medihub</h5>
-                                                <span>Medical,Health</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/6.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Buildco</h5>
-                                                <span>Construction</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/7.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Webfix</h5>
-                                                <span>Creative</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/8.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Buspro</h5>
-                                                <span>Corporate</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/9.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Seorun</h5>
-                                                <span>Digital Marketing</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/10.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Dostart</h5>
-                                                <span>Startup</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/11.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Examin</h5>
-                                                <span>Education,Course</span>
-                                            </div>
-                                        </a>
-                                    </div>
+
                                     <div class="item">
                                         <a href="#">
                                             <img src="https://algeriadw.ga/assets/themes/img/category/12.jpg" alt="Thumb">
@@ -358,87 +191,7 @@
                             <!-- Single Tab Content -->
                             <div id="tab3" class="tab-pane fade">
                                 <div class="row">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/3.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Deluck</h5>
-                                                <span>Business</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/4.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Rescaf</h5>
-                                                <span>Food,Restaurant</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/5.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Medihub</h5>
-                                                <span>Medical,Health</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/6.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Buildco</h5>
-                                                <span>Construction</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/7.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Webfix</h5>
-                                                <span>Creative</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/8.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Buspro</h5>
-                                                <span>Corporate</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/9.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Seorun</h5>
-                                                <span>Digital Marketing</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/10.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Dostart</h5>
-                                                <span>Startup</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="https://algeriadw.ga/assets/themes/img/category/11.jpg" alt="Thumb">
-                                            <div class="overlay">
-                                                <h5>Examin</h5>
-                                                <span>Education,Course</span>
-                                            </div>
-                                        </a>
-                                    </div>
+
                                     <div class="item">
                                         <a href="#">
                                             <img src="https://algeriadw.ga/assets/themes/img/category/12.jpg" alt="Thumb">
@@ -473,254 +226,77 @@
                 </div>
                 <div class="trend-items">
                     <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#"><img src="https://algeriadw.ga/assets/themes/img/product/1.jpg" alt="Thumb"></a>
-                            </div>
-                            <div class="info-box">
-                                <div class="top-info">
-                                    <h4>
-                                        <a href="#">Boxass - Startup Landing Page Theme</a>
-                                    </h4>
-                                    <div class="author">
-                                        by <a href="#">Author</a> in
-                                        <span><a href="#">Startup</a> / <a href="#">Landing</a></span>
-                                    </div>
-                                    <div class="item-type">
-                                        <a href="#"><i class="fab fa-wordpress"></i> WordPress</a>
-                                        <div class="rating">
-                                            <div class="four-out-of-five">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
+                    <?php foreach ($themes as $theme) {
+                    ?>
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#"><img src="<?= $theme['image_path'] ?>" alt="Thumb"></a>
+                                </div>
+                                <div class="info-box">
+                                    <div class="top-info">
+                                        <h4>
+                                            <a href="#"><?= $theme['title'] ?></a>
+                                        </h4>
+                                        <div class="author">
+                                            by <a href="#"><?= $theme['name_author'] ?></a> in
+                                            <span><a href="#"><?= $theme['tags'] ?></a> / <a href="#"><?= $theme['technology'] ?></a></span>
+                                        </div>
+                                        <div class="item-type">
+                                            <a href="#"><?= $theme['icon_category'] ?> <?= $theme['name_category'] ?></a>
+                                           
+                                            <div class="rating">
+                                                <div class="four-out-of-five">
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="bottom-info">
-                                    <div class="item-preview">
-                                        <a href="#">Preview</a>
-                                    </div>
-                                    <div class="price">
-                                        <h4>$59.00</h4>
+                                    <div class="bottom-info">
+                                        <div class="item-preview">
+                                            <a href="#">Preview</a>
+                                        </div>
+                                        <div class="price">
+                                            <h4>DZ<?= $theme['price'] ?></h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#"><img src="https://algeriadw.ga/assets/themes/img/product/2.jpg" alt="Thumb"></a>
-                            </div>
-                            <div class="info-box">
-                                <div class="top-info">
-                                    <h4>
-                                        <a href="#">Rescaf - Food & Restaurant Template</a>
-                                    </h4>
-                                    <div class="author">
-                                        by <a href="#">Author</a> in
-                                        <span><a href="#">Restaurant</a></span>
-                                    </div>
-                                    <div class="item-type">
-                                        <a href="#"><i class="fab fa-html5"></i> HTML5</a>
-                                        <div class="rating">
-                                            <div class="no-rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bottom-info">
-                                    <div class="item-preview">
-                                        <a href="#">Preview</a>
-                                    </div>
-                                    <div class="price">
-                                        <h4>$17.00</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#"><img src="https://algeriadw.ga/assets/themes/img/product/3.jpg" alt="Thumb"></a>
-                            </div>
-                            <div class="info-box">
-                                <div class="top-info">
-                                    <h4>
-                                        <a href="#">MediHub - Medical & Health Template</a>
-                                    </h4>
-                                    <div class="author">
-                                        by <a href="#">Author</a> in
-                                        <span><a href="#">Health</a> / <a href="#">Medical</a></span>
-                                    </div>
-                                    <div class="item-type">
-                                        <a href="#"><i class="fas fa-images"></i> PSD</a>
-                                        <div class="rating">
-                                            <div class="four-out-of-five">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bottom-info">
-                                    <div class="item-preview">
-                                        <a href="#">Preview</a>
-                                    </div>
-                                    <div class="price">
-                                        <h4>$14.00</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#"><img src="https://algeriadw.ga/assets/themes/img/product/4.jpg" alt="Thumb"></a>
-                            </div>
-                            <div class="info-box">
-                                <div class="top-info">
-                                    <h4>
-                                        <a href="#">Webfix - Creative Multipurpose Theme</a>
-                                    </h4>
-                                    <div class="author">
-                                        by <a href="#">Author</a> in
-                                        <span><a href="#">Creative</a></span>
-                                    </div>
-                                    <div class="item-type">
-                                        <a href="#"><i class="fab fa-wordpress"></i> WordPress</a>
-                                        <div class="rating">
-                                            <div class="three-out-of-five">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bottom-info">
-                                    <div class="item-preview">
-                                        <a href="#">Preview</a>
-                                    </div>
-                                    <div class="price">
-                                        <h4>$42.00</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#"><img src="https://algeriadw.ga/assets/themes/img/product/5.jpg" alt="Thumb"></a>
-                            </div>
-                            <div class="info-box">
-                                <div class="top-info">
-                                    <h4>
-                                        <a href="#">Dostart - Startup Agency & Landing Page</a>
-                                    </h4>
-                                    <div class="author">
-                                        by <a href="#">Author</a> in
-                                        <span><a href="#">Startup</a> / <a href="#">Landing</a></span>
-                                    </div>
-                                    <div class="item-type">
-                                        <a href="#"><i class="fab fa-html5"></i> HTML5</a>
-                                        <div class="rating">
-                                            <div class="five-out-of-five">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bottom-info">
-                                    <div class="item-preview">
-                                        <a href="#">Preview</a>
-                                    </div>
-                                    <div class="price">
-                                        <h4>$17.00</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#"><img src="https://algeriadw.ga/assets/themes/img/product/6.jpg" alt="Thumb"></a>
-                            </div>
-                            <div class="info-box">
-                                <div class="top-info">
-                                    <h4>
-                                        <a href="#">Examin - Education and LMS Theme</a>
-                                    </h4>
-                                    <div class="author">
-                                        by <a href="#">Author</a> in
-                                        <span><a href="#">LMS</a> / <a href="#">Education</a></span>
-                                    </div>
-                                    <div class="item-type">
-                                        <a href="#"><i class="fab fa-wordpress"></i> WordPress</a>
-                                        <div class="rating">
-                                            <div class="no-rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bottom-info">
-                                    <div class="item-preview">
-                                        <a href="#">Preview</a>
-                                    </div>
-                                    <div class="price">
-                                        <h4>$64.00</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
+                    <?php
+                    } ?>
 
-                    <!-- Start More Button Item -->
-                    <div class="col-md-12 more-btn text-center">
-                        <a class="btn btn-theme effect circle btn-md" href="#">Viwe All <i class="fas fa-spinner"></i></a>
-                    </div>
-                    <!-- End More Button Item -->
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+
                 </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+
+                <!-- End Single Item -->
+                <!-- Single Item -->
+
+                <!-- End Single Item -->
+
+                <!-- Start More Button Item -->
+                <div class="col-md-12 more-btn text-center">
+                    <a class="btn btn-theme effect circle btn-md" href="#">Viwe All <i class="fas fa-spinner"></i></a>
+                </div>
+                <!-- End More Button Item -->
             </div>
         </div>
+    </div>
     </div>
     <!-- End New Product -->
 
@@ -945,7 +521,7 @@
                                     <a href="blog-single-left-sidebar.html">Announcing alteration at surrounded comparison. </a>
                                 </h4>
                                 <p>
-                                    Express village evening prudent my as ye hundred forming. Thoughts she why not directly reserved packages you. Winter an silent favour of am tended mutual. 
+                                    Express village evening prudent my as ye hundred forming. Thoughts she why not directly reserved packages you. Winter an silent favour of am tended mutual.
                                 </p>
                                 <a class="btn btn-theme border btn-sm" href="blog-single-left-sidebar.html">Read More</a>
                             </div>
@@ -976,7 +552,7 @@
                                     <a href="blog-single-left-sidebar.html">Announcing alteration at surrounded comparison. </a>
                                 </h4>
                                 <p>
-                                    Express village evening prudent my as ye hundred forming. Thoughts she why not directly reserved packages you. Winter an silent favour of am tended mutual. 
+                                    Express village evening prudent my as ye hundred forming. Thoughts she why not directly reserved packages you. Winter an silent favour of am tended mutual.
                                 </p>
                                 <a class="btn btn-theme border btn-sm" href="blog-single-left-sidebar.html">Read More</a>
                             </div>
@@ -1007,7 +583,7 @@
                                     <a href="blog-single-left-sidebar.html">Announcing alteration at surrounded comparison. </a>
                                 </h4>
                                 <p>
-                                    Express village evening prudent my as ye hundred forming. Thoughts she why not directly reserved packages you. Winter an silent favour of am tended mutual. 
+                                    Express village evening prudent my as ye hundred forming. Thoughts she why not directly reserved packages you. Winter an silent favour of am tended mutual.
                                 </p>
                                 <a class="btn btn-theme border btn-sm" href="blog-single-left-sidebar.html">Read More</a>
                             </div>
@@ -1033,13 +609,13 @@
                 <div class="col-md-6 subscription-content">
                     <h2>Join with our global community</h2>
                     <p>
-                        Incommode so intention defective at convinced. Led income months itself and houses you. After nor you leave might share court balls. 
+                        Incommode so intention defective at convinced. Led income months itself and houses you. After nor you leave might share court balls.
                     </p>
                     <form action="#">
                         <input type="email" placeholder="Enter your e-mail here" class="form-control" name="email">
                         <button type="submit">
                             Subscribe <i class="fa fa-paper-plane"></i>
-                        </button>  
+                        </button>
                     </form>
                 </div>
                 <div class="col-md-6 community-info">
@@ -1069,7 +645,7 @@
 
     <!-- jQuery Frameworks
     ============================================= -->
-    <?php require('partials/theme/_script.php') ?>
+    <?php require('partials/theme/_script.php'); ?>
 
 </body>
 

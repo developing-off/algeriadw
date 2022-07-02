@@ -25,7 +25,7 @@
 <!--favicon icon-->
 <link rel="icon" href="<?= $logo_png_only ?>" type="image/png" sizes="16x16">
 <!--title-->
-<title>AlgeriaDW - Dev Web</title>
+<title>AlgeriaDW - Themes</title>
 <link href="https://algeriadw.ga/assets/themes/css/bootstrap.min.css" rel="stylesheet" />
 <link href="https://algeriadw.ga/assets/themes/css/font-awesome.min.css" rel="stylesheet" />
 <link href="https://algeriadw.ga/assets/themes/css/flaticon-set.css" rel="stylesheet" />
@@ -38,6 +38,7 @@
 <link href="https://algeriadw.ga/assets/themes/css/responsive.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c2571f9658.js" crossorigin="anonymous"></script>
 
  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F2YCE9JKB"></script>
 <script>
