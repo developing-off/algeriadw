@@ -1,4 +1,6 @@
 <?php
+#get if user is registed in databse table themes_author
+require('func/themes/user_themes_check.php');
 #get all the categories from the database and display them in a list 
 $sql = $pdo->prepare("SELECT * FROM `themes_category`");
 $sql->execute();
@@ -13,6 +15,7 @@ $total_themes = $sql->fetchColumn();
 $sql = $pdo->prepare("SELECT
 theme.id,
 theme.image_path,
+theme.download_path,
 theme.title,
 theme.author_id,
 theme.tags,
@@ -35,5 +38,4 @@ LEFT JOIN themes_category themeg ON theme.category = themeg.id
 LEFT JOIN themes_author themea ON theme.author_id = themea.id_user");
 $sql->execute();
 $themes = $sql->fetchAll(PDO::FETCH_ASSOC);
-var_dump($themes);
 ?>

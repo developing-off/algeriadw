@@ -8,7 +8,7 @@
                 </ul>
             </div>
             <div class="col-md-4 col-sm-4 login-info text-right">
-                <a href="<?= $url_root ?>profile"><i class="fas fa-user"></i> <?= $_SESSION['username'] ?></a>
+                <a href="<?= $url_root ?>themes/my-profile"><i class="fas fa-user"></i> <?= $_SESSION['name_author'] ?></a>
             </div>
         </div>
     </div>
@@ -34,14 +34,12 @@
                         </a>
                         <ul class="dropdown-menu cart-list">
                             <li>
-                                <a href="#" class="photo"><img src="assets/img/100x100.png" class="cart-thumb"
-                                        alt="" /></a>
+                                <a href="#" class="photo"><img src="assets/img/100x100.png" class="cart-thumb" alt="" /></a>
                                 <h6>Examin - Education and LMS Theme</h6>
                                 <p>$49.00</p>
                             </li>
                             <li>
-                                <a href="#" class="photo"><img src="<?= $logo_png_right_black ?>" class="cart-thumb"
-                                        alt="" /></a>
+                                <a href="#" class="photo"><img src="<?= $logo_png_right_black ?>" class="cart-thumb" alt="" /></a>
                                 <h6>Rescaf - Food & Restaurant Template</h6>
                                 <p>$17.00</p>
                             </li>
@@ -58,14 +56,12 @@
                         </a>
                         <ul class="dropdown-menu cart-list">
                             <li>
-                                <a href="#" class="photo"><img src="assets/img/100x100.png" class="cart-thumb"
-                                        alt="" /></a>
+                                <a href="#" class="photo"><img src="assets/img/100x100.png" class="cart-thumb" alt="" /></a>
                                 <h6>Examin - Education and LMS Theme</h6>
                                 <p>$49.00</p>
                             </li>
                             <li>
-                                <a href="#" class="photo"><img src="<?= $logo_png_right_black ?>" class="cart-thumb"
-                                        alt="" /></a>
+                                <a href="#" class="photo"><img src="<?= $logo_png_right_black ?>" class="cart-thumb" alt="" /></a>
                                 <h6>Rescaf - Food & Restaurant Template</h6>
                                 <p>$17.00</p>
                             </li>
@@ -86,7 +82,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="<?= $url_root ?>">
                     <img src="<?= $logo_png_right_black ?>" class="logo" alt="Logo">
                 </a>
             </div>
@@ -96,7 +92,7 @@
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
 
-                    <li> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Home</a></li>
+                    <li> <a href="<?= $url_root ?>themes" class="dropdown-toggle active" data-toggle="dropdown">Home</a></li>
 
 
                     <li class="dropdown">

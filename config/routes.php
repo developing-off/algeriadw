@@ -17,7 +17,20 @@ case 'themes':
             include 'template/theme.php';
         } else {
             $url1=$url[1];
-            include 'template/theme.php';
+            if($url1=='my-profile'){
+                if(!empty($url[2])){
+                    $url2=$url[2];
+                    header('Location:'.$url_root.'themes/author-profile/'.$url2); 
+                }else{
+                    include 'profile/dash.php';
+                }
+            } elseif($url1=='edit'){
+                include 'template/edit.php';
+            } elseif($url1=='delete'){
+                include 'template/delete.php';
+            } else {
+                include 'template/theme.php';
+            }
         }
     }
 break;
@@ -92,4 +105,3 @@ default:
     include 'error/404.php';
 break;
 }
-?>
