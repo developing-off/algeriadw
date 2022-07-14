@@ -66,7 +66,7 @@
                                 <span>Total Items</span>
                             </li>
                             <li>
-                                <h2>397877</h2>
+                                <h2><?= $total_users ?></h2>
                                 <span>Community Users</span>
                             </li>
                         </ul>

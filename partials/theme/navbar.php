@@ -4,7 +4,7 @@
             <div class="col-md-8 col-sm-8 basic-info text-left">
                 <ul>
                     <li>Total Items: <a href="<?= $url_root ?>search-product"><?= $total_themes ?></a></li>
-                    <li>Community Users: <strong>397877</strong></li>
+                    <li>Community Users: <strong><?= $total_users ?></strong></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-4 login-info text-right">

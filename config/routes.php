@@ -24,8 +24,8 @@ case 'themes':
                 }else{
                     include 'profile/dash.php';
                 }
-            } elseif($url1=='edit'){
-                include 'template/edit.php';
+            }elseif($url1=='settings-profile'){
+                include 'profile/settings.php';
             } elseif($url1=='delete'){
                 include 'template/delete.php';
             } else {

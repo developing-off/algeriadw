@@ -22,7 +22,8 @@ if (isset($_POST['login'])) {
         useri.country,
         useri.city,
         useri.info_stat,
-        useri.subscr
+        useri.subscr,
+        useri.gender
         FROM users_login user
         LEFT JOIN 
         users_param userp ON user.id = userp.id_user
@@ -49,6 +50,7 @@ if (isset($_POST['login'])) {
                     $_SESSION['address'] = $users['address'];
                     $_SESSION['country'] = $users['country'];
                     $_SESSION['city'] = $users['city'];
+                    $_SESSION['gender'] = $users['gender'];
                     $_SESSION['subscribe'] = $users['subscr'];
                     $_SESSION['info_stat'] = $users['info_stat'];
                     $_SESSION['logged_in'] = true; 

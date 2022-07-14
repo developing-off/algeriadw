@@ -10,6 +10,10 @@ $category = $sql->fetchAll(PDO::FETCH_ASSOC);
 $sql = $pdo->prepare("SELECT COUNT(*) FROM themes");
 $sql->execute();
 $total_themes = $sql->fetchColumn();
+#get number of users
+$sql = $pdo->prepare("SELECT COUNT(*) FROM users_login");
+$sql->execute();
+$total_users = $sql->fetchColumn();
 
 #show themes in all categories and authors 
 $sql = $pdo->prepare("SELECT

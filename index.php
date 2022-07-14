@@ -4,7 +4,6 @@ include('config/pdo.php');
 require_once('partials/_logos.php');
 require_once('partials/_clients.php');
 $url_root = 'https://'.$_SERVER['SERVER_NAME'].'/';
-
 if(isset($_SESSION['logged_in'])){
     if ($_SESSION['info_stat'] == null) {
         if ($_SERVER['REQUEST_URI'] != "/register_complet") {
@@ -25,12 +24,18 @@ try{
                     
                 }
             }else{
-                if ($_SERVER['REQUEST_URI'] == "/register_complet") {
-                    header('Location:'.$url_root.'login');
+                if ($_SERVER['REQUEST_URI'] != "/register_complet") {
+                   header('Location:'.$url_root.'login');
                 }
             }
         }
-           
+        if(!isset($_SESSION['logged_in'])){
+            if ($_SERVER['REQUEST_URI'] == "/register_complet") {
+                echo 'hey4';
+                exit;
+                header('Location:'.$url_root.'login');
+            }
+        }
         
         include('config/routes.php');
       
