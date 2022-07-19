@@ -1,150 +1,143 @@
+<?php
+var_dump($_SESSION);
+$sql = $pdo->prepare("SELECT name_author FROM themes_author WHERE id_user = :id");
+$sql->execute(['id' => $_SESSION['id']]);
+$name_author = $sql->fetchColumn();
+var_dump($name_author);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-<?php require('partials/theme/_category.php'); #var_dump($themes,$_SESSION) 
-?>
 
 <head>
-    <?php require('partials/theme/_head.php') ?>
+    <?php require('partials/_head.php') ?>
+
 </head>
 
 <body>
-    <!-- Preloader Start -->
-    <div class="se-pre-con"></div>
-    <!-- Preloader Ends -->
-    <?php require('partials/theme/navbar.php') ?>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKBKXZD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--preloader start-->
+    <?php require('partials/_loader.php') ?>
+    <!--preloader end-->
+    <!--main content wrapper start-->
+    <div class="main-wrapper">
+        <!--header section start-->
+        <!--header start-->
+        <header class="main-header position-absolute w-100">
+            <?php require('include/navbar.php') ?>
+        </header>
+        <!--header end-->
+        <!--header section end-->
 
-    <div class="author-profile-area shadow-less bg-gray default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="author-info">
-                    <div class="thumb col-md-2 col-md-offset-0 col-sm-3 col-sm-offset-3">
-                        <img src="<?= $_SESSION['img-profile'] ?>" alt="Thumb">
-                    </div>
-                    <div class="profile-info col-md-10 col-sm-12">
-                        <div class="top-info">
-                            <div class="bio">
-                                <h4><?= $_SESSION['name_author'] ?></h4>
-                                <p>
-                                    Member since
-                                    <?php $date_join = date_create($_SESSION['date_join']);
-                                    echo date_format($date_join, "F. Y") ?>
-                                </p>
-                                <?php if ($_SESSION['id'] == $themes_author_check[0]['id_user']) {
-                                } else {
-                                ?>
-                                    <a href="#">Follow</a>
-                                <?php
-                                } ?>
 
-                            </div>
-                            <div class="item-info">
-                                <ul>
-                                    <li>
-                                        <h5><?= $total_themes_author ?></h5>
-                                        <span>Total Items</span>
-                                    </li>
-                                    <li>
-                                        <h5>0</h5>
-                                        <span>Total Sales</span>
-                                    </li>
-                                    <li>
-                                        <div class="rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star-half-alt"></i>
-                                            <span>(0)</span>
-                                        </div>
-                                        <span>Author Rating</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+        <section class="sign-up-in-section bg-dark ptb-120" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom right">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
 
-                        <!-- Start Author Content -->
+                    <div class="col-xl-12 col-lg-7 col-md-12 order-0 order-lg-1">
+                        <div class="register-wrap p-5 bg-white shadow align-items-center rounded-custom mt-5 mt-lg-0 mt-xl-0">
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product-single-area bg-gray default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="product-description">
-                    <div class="col-md-8 product-info">
-                        <!-- Start Tab Navbar -->
-                        
-                        <!-- End Tab Navbar -->
-                        <!-- Start Tab Content -->
-                        <div class="tab-content">
 
-                            <!-- Tab Single -->
-                            <div id="tab1" class="tab-pane fade active in">
-                               
-                                <div class="description">
-                                    
-                                   
-                                    <h4>Item Features</h4>
-                                    <ul>
-                                        <li>Build with HTML5,CSS3,Bootstrap</li>
-                                        <li>Bootstrap 4.x</li>
-                                        <li>Font Awesome</li>
-                                        <li>Google Fonts</li>
-                                        <li>Working Contact Form</li>
-                                        <li>Eye Catching Design</li>
-                                        <li>W3C Validated Code</li>
-                                        <li>Free Support</li>
-                                    </ul>
-
-                                    <h4>File Included</h4>
-                                    <ul>
-                                        <li>HTML files</li>
-                                        <li>CSS files</li>
-                                        <li>JS files</li>
-                                        <li>PHP file</li>
-                                        <li>Free Images</li>
-                                        <li>Documentation</li>
-                                    </ul>
-                                    <h4>Credits and Sources</h4>
-                                    <ul>
-                                        <li><a href="#">jQuery JavaScript Library</a></li>
-                                        <li><a href="#">Bootstrap</a></li>
-                                        <li><a href="#">Font Awesome</a></li>
-                                        <li><a href="#">Wow Animation</a></li>
-                                    </ul>
+                            <div class="col-sm-12 align-items-center">
+                                <div class="author-info">
+                                    <div class="thumb col-md-2 col-md-offset-0 col-sm-3 col-sm-offset-3">
+                                        <img src="https://api.algeriadw.studio/img/profile-default/JPG-men/profile-4.png" alt="profile-avatar">
+                                    </div>
                                 </div>
-                                <!-- Start Related Item -->
-                                
-                                <!-- End Related Item -->
+                                <div class="col-sm-12">
+                                    <h4>Thespikeone</h4>
+                                </div>
                             </div>
-                            <!-- End Tab Single -->
-                        </div>
-                        <!-- End Tab Content -->
-                    </div>
 
-                    <!-- Start Product Sidebar -->
-                    <div class="col-md-4 product-sidebar">
-                        <!-- Single Widget -->
-                        <div class="sidebar-item purchase-info">
-                        <a href="#" class="btn btn-theme border btn-sm"> Update Profile</a>
+
+                            <form action="#" class="mt-4 register-form">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <label for="FirstName">Name <span style="color: red;">*</span>: </label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="name" value="<?= $_SESSION['name'] ?>" name="name" aria-label="Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <label for="UserName">Username <span style="color: red;">*</span>: </label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="username" value="<?= $_SESSION['username'] ?>" name="username" aria-label="UserName">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="mkusername">Marketplace Username <span style="color: red;">*</span>: </label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="marketplace username" value="<?= $name_author ?>" name="market_username" aria-label="mkusername">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="Name">Email <span style="color: red;">*</span>:</label>
+                                        <div class="input-group mb-3">
+                                            <button type="button" class="btn btn-primary btn-sm">change</button>
+                                            <input type="text" class="form-control" placeholder="<?= $_SESSION['email'] ?>" aria-label="" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="Name">Adress: </label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="" aria-label="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="Name">Country: </label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="" aria-label="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="Name">Postal code: </label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Name" aria-label="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="Name">Phone Number: </label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Name" aria-label="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary mt-4 d-block w-100">Update Profile
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <!-- End Single Widget -->
                     </div>
-                    <!-- End Product Sidebar -->
                 </div>
             </div>
-        </div>
+        </section>
+
+        <style>
+            .author-info img {
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 140%;
+                border: 4px solid #f5ebf2;
+                padding: 0px;
+                box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%);
+                width: 77%;
+            }
+        </style>
+        <!--footer section start-->
+        <footer class="footer-section">
+            <?php require('include/footer.php') ?>
+        </footer>
+        <!--footer section end-->
+        <!--footer section end-->
+
     </div>
-    <!-- End Authro Profile -->
-    <!-- Start Footer 
-    ============================================= -->
-    <footer class="bg-dark">
-        <?php require('partials/theme/footer.php') ?>
-    </footer>
-    <!-- End Footer -->
-    <?php require('partials/theme/_script.php'); ?>
+
+
+    <?php require('partials/_script.php') ?>
 </body>
 
 </html>
